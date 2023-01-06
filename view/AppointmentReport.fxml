@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="468.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentReportController">
+   <children>
+      <TableView fx:id="ReportsTable" layoutX="46.0" layoutY="95.0" prefHeight="359.0" prefWidth="339.0">
+        <columns>
+          <TableColumn fx:id="TypeColumn" prefWidth="165.0" text="Appointment Type" />
+          <TableColumn fx:id="AmountColumn" prefWidth="173.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="46.0" layoutY="14.0" text="Appointment Report">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="MonthBox" layoutX="46.0" layoutY="64.0" onAction="#ChooseMonth" prefWidth="150.0" />
+      <Button fx:id="MainMenu" layoutX="308.0" layoutY="64.0" mnemonicParsing="false" onAction="#returnMainMenu" text="Main Menu" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="672.0" layoutX="-9.0">
+            <image>
+                <Image url="@Images/loginbg.jpg" />
+            </image>
+        </ImageView>
+        <TextField fx:id="UsernameField" layoutX="243.0" layoutY="200.0" promptText="Username" />
+      <Button fx:id="LoginButton" layoutX="293.0" layoutY="294.0" mnemonicParsing="false" onAction="#UserLogin" text="Log In" />
+      <PasswordField fx:id="PasswordField" layoutX="243.0" layoutY="241.0" promptText="Password" />
+      <Label fx:id="ZoneIDField" layoutX="21.0" layoutY="369.0" text="Zone ID" />
+    </children>
+</AnchorPane>
